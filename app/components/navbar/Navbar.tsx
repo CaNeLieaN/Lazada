@@ -4,6 +4,8 @@ import Logo from "./Logo";
 import Search from "./Search";
 import { LuShoppingCart } from "react-icons/lu";
 
+import { AiOutlineSearch } from "react-icons/ai";
+
 const Navbar = () => {
   return (
     <div className="fixed w-full bg-white z-10 shadow-sm">
@@ -26,7 +28,8 @@ const Navbar = () => {
           >
             <Logo />
             <Search />
-            <LuShoppingCart size={20} />
+            <LuShoppingCart size={40} />
+
             <Image
               className="hidden md:block cursor-pointer"
               src="/images/promotionfirsttime.jpg"
