@@ -8,7 +8,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full bg-white z-10 shadow-sm">
+    <div className="fixed w-full bg-slate-50 z-10 shadow-sm">
       <div
         className="
           py-4 
@@ -21,14 +21,14 @@ const Navbar = () => {
             flex 
             flex-row 
             items-center 
-            justify-start
+            justify-center
             gap-3
             md:gap-5
           "
           >
             <Logo />
             <Search />
-            <LuShoppingCart size={40} />
+            <LuShoppingCart className="cursor-pointer" size={40} />
 
             <Image
               className="hidden md:block cursor-pointer"

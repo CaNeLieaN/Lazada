@@ -6,7 +6,7 @@ const Categories = () => {
     <Container>
       <div className="pt-4 flex flex-row items-center justify-between overflow-x-auto">
         <button className="home-button flex flex-row items-center font-medium text-sm px-4 py-2 rounded">
-          <div className="mr-2 md:w-[250px]  flex flex-row bg-white rounded-full">
+          <div className="mr-2 md:w-[200px] lg:w-[250px] flex flex-row bg-white rounded-full">
             <div className="h-[45px] w-[45px]">
               <Image
                 src="/images/Lazmall.png"
@@ -26,7 +26,7 @@ const Categories = () => {
           </div>
         </button>
         <button className="home-button flex flex-row items-center text-neutral-500 font-medium text-sm px-4 py-2 rounded">
-          <div className="mr-2 md:w-[220px] flex flex-row bg-white rounded-full">
+          <div className="mr-2 md:w-[200px] lg:w-[220px] flex flex-row bg-white rounded-full">
             <div className="h-[45px] w-[45px]">
               <Image
                 src="/images/ticket.png"
@@ -46,7 +46,7 @@ const Categories = () => {
           </div>
         </button>
         <button className="home-button flex flex-row items-center text-neutral-500 font-medium text-sm px-4 py-2 rounded">
-          <div className="mr-2 md:w-[250px] flex flex-row bg-white rounded-full">
+          <div className="mr-2 md:w-[200px] lg:w-[250px] flex flex-row bg-white rounded-full">
             <div className="h-[45px] w-[45px]">
               <Image
                 src="/images/prepayanddeal.png"
@@ -66,7 +66,7 @@ const Categories = () => {
           </div>
         </button>
         <button className="home-button flex flex-row items-center text-neutral-500 font-medium text-sm px-4 py-2 rounded">
-          <div className="mr-2 md:w-[250px] flex flex-row bg-white rounded-full">
+          <div className="mr-2 md:w-[200px] lg:w-[250px] flex flex-row bg-white rounded-full">
             <div className="h-[45px] w-[45px]">
               <Image
                 src="/images/lazblog.png"
@@ -85,8 +85,8 @@ const Categories = () => {
             </div>
           </div>
         </button>
-        <button className="flex flex-row items-center text-neutral-500 font-medium text-sm px-4 py-2 rounded">
-          <div className="mr-2 md:w-[250px] flex flex-row bg-white rounded-full">
+        <button className="home-button flex flex-row items-center text-neutral-500 font-medium text-sm px-4 py-2 rounded">
+          <div className="mr-2 md:w-[200px] lg:w-[250px] flex flex-row bg-white rounded-full">
             <div className="h-[45px] w-[45px]">
               <Image
                 src="/images/suggestshop.png"

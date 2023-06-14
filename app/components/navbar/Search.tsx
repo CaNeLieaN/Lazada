@@ -17,7 +17,7 @@ const Search = () => {
       border-[1px] 
       w-full 
       h-full
-      md:w-[1224px] 
+      md:w-[440px] 
       py-4 
       shadow-sm 
       transition 
@@ -43,7 +43,10 @@ const Search = () => {
       "
         ></input>
       </div>
-      <AiOutlineSearch className=" bg-orange-500 h-full" size={40} />
+      <AiOutlineSearch
+        className="bg-orange-500 h-full cursor-pointer"
+        size={40}
+      />
     </div>
   );
 };

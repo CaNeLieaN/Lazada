@@ -1,9 +1,11 @@
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Container from "./components/Container";
-import ProductCards from "./components/products/ProductCards";
+import ProductInfo from "./components/products/ProductInfo";
 import Carousel from "./components/navbar/Carousel";
 import Categories from "./components/navbar/Categories";
+import Promotion from "./components/footer/promotion";
+import AboutLazada from "./components/footer/aboutLazada";
 
 export const metadata = {
   title: "Lazada",
@@ -19,9 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex flex-col">
+        <main className="flex flex-col bg-[#f5f5f5]">
           <Container>
-            <div className="mt-40">
+            <div className="mt-40 bg-black">
               <Carousel />
             </div>
           </Container>
@@ -35,27 +37,17 @@ export default function RootLayout({
             <div
               className="
         pt-10
-        grid
-        grid-cols-1
-        sm:grid-cols-3
-        md:grid-cols-4
-        xl:grid-cols-5
-        2xl:grid-cols-6
         gap-[20px]
         bg-white
-        
         "
             >
-              <ProductCards />
-              <ProductCards />
-              <ProductCards />
-              <ProductCards />
-              <ProductCards />
-              <ProductCards />
+              <ProductInfo />
             </div>
           </Container>
           {children}
         </main>
+        <Promotion />
+        <AboutLazada />
       </body>
     </html>
   );

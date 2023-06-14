@@ -5,7 +5,6 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Rowdies } from "next/font/google";
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -35,13 +34,12 @@ const Carousel = () => {
 
   return (
     <div
-      className="carousel bg-white "
+      className="carousel bg-white w-full cursor-pointer"
       style={{
         width: "988px",
         height: "344px",
         justifyContent: "center",
         flexDirection: "row",
-        // marginLeft: 400,
       }}
     >
       <Slider {...settings}>
