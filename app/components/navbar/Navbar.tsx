@@ -4,39 +4,28 @@ import Logo from "./Logo";
 import Search from "./Search";
 import { LuShoppingCart } from "react-icons/lu";
 
-import { AiOutlineSearch } from "react-icons/ai";
-
 const Navbar = () => {
   return (
     <div className="fixed w-full bg-slate-50 z-10 shadow-sm">
-      <div
-        className="
-          py-4 
-          border-b-[1px]
-        "
-      >
+      <div className="py-4 border-b">
         <Container>
-          <div
-            className="
-            flex 
-            flex-row 
-            items-center 
-            justify-center
-            gap-3
-            md:gap-5
-          "
-          >
+          <div className="flex items-center justify-center gap-5">
             <Logo />
-            <Search />
-            <LuShoppingCart className="cursor-pointer" size={40} />
-
-            <Image
-              className="hidden md:block cursor-pointer"
-              src="/images/promotionfirsttime.jpg"
-              height="200"
-              width="200"
-              alt="Logo"
-            />
+            <div className="hidden gap-5 md:flex md:items-center">
+              <Search />
+              <LuShoppingCart className="cursor-pointer" size={40} />
+            </div>
+            <div className="md:hidden">
+              <Search />
+            </div>
+            <div className="hidden md:block">
+              <Image
+                src="/images/promotionfirsttime.jpg"
+                height={200}
+                width={200}
+                alt="Logo"
+              />
+            </div>
           </div>
         </Container>
       </div>

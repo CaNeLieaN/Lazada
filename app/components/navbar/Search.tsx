@@ -1,51 +1,19 @@
-"use client";
-
 import { AiOutlineSearch } from "react-icons/ai";
-import { LuShoppingCart } from "react-icons/lu";
 
 const Search = () => {
   return (
-    <div
-      className="
-    flex
-    flex-row
-    h-[50px]
-    "
-    >
-      <div
-        className="
-      border-[1px] 
-      w-full 
-      h-full
-      md:w-[440px] 
-      py-4 
-      shadow-sm 
-      transition 
-      cursor-pointer
-      bg-[#eff0f5]
-    "
-      >
-        <input
-          placeholder="ค้นหาในลาซาด้า"
-          className="
-        
-        flex 
-        flex-row 
-        items-center 
-        justify-between
-        text-xl
-        outline-none
-        w-full
-        h-full
-        ml-5
-        bg-[#eff0f5]
-    
-      "
-        ></input>
+    <div className="flex flex-row h-12">
+      <div className="flex-grow">
+        <div className="border border-gray-300 w-full h-full py-2 px-4 shadow-sm transition cursor-pointer bg-gray-100">
+          <input
+            placeholder="ค้นหาในลาซาด้า"
+            className="w-full h-full text-xl outline-none bg-transparent"
+          />
+        </div>
       </div>
       <AiOutlineSearch
-        className="bg-orange-500 h-full cursor-pointer"
-        size={40}
+        className="h-full p-2 bg-orange-500 cursor-pointer"
+        size={24}
       />
     </div>
   );
